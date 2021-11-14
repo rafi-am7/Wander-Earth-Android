@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687025207626",
+    "project_id": "wander-earth-hotels",
+    "storage_bucket": "wander-earth-hotels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687025207626:android:7449b7474fe2e29dba29b3",
+        "android_client_info": {
+          "package_name": "com.example.wanderearth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687025207626-rptuotr3n7imt1tsdcfk1u115su4re1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqx38IdgMxKNkrutmXQF_TushTtuJj8fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687025207626-rptuotr3n7imt1tsdcfk1u115su4re1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

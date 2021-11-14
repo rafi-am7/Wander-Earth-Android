@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wander Earth</string>
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="id_type_options">
+        <item>Select Member Type</item>
+        <item>Consumer</item>
+        <item>Hotel</item>
+    </string-array>
+    <string name="gender_string">Select Gender</string>
+</resources>

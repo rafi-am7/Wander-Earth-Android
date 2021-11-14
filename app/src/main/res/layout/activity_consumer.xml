@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consumerScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".ConsumerActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/logOutButtonConsumer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bg_thick"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/roomHeadingConsumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logOutButtonConsumer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="start"
+            android:text="Select Hotel"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomHeadingConsumer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorYellow"
+                android:padding="8dp"
+                android:src="@drawable/outline_room_white_24" />
+
+            <Spinner
+                android:id="@+id/select_hotel_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg_yellow"
+                android:focusableInTouchMode="true"
+
+                android:inputType="phone"
+
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/marker_progressbar_consumer"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/seeRoomsButtonFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/spinnerLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bg_thick"
+            android:backgroundTint="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/seeRoomsButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:text="See Rooms"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/hotelNameConsumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seeRoomsButtonFrameLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Hotel"
+            android:textColor="@color/success"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/emailConsumerHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotelNameConsumer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="sample.gamil.com"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/consumerCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailConsumerHotel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/ic_tution_fee_background_transparent"
+            app:mcv_calendarMode="week"
+            app:mcv_selectionColor="#FF000000"
+            app:mcv_showOtherDates="all" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotelRoomsConsumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consumerCalendarView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,15 +1,12 @@
 # Wander Earth – Android Mobile Application
-***
 ‘Wander Earth’ is a platform where consumers can get all hotels in one platform. They can also compare rooms by ratings and prices of hotels. Hotels also can provide their services through this applictaion. 
 
 ## Objectives
----
 * To assemble all hotels in one platform
 * To provide the ratings of hotel room
 * To make travelling easier
 
 ## Features
----
 
 **1. User Registration:** If the user wants to use the Wanter Earth, they must download the application from the play store, install and register it by providing login information. Once, they registers the registered information is stored on the server and can be validated, checking the valid credentials for the next time he logins with the application. Note that there will be two types of member type during sign up: Hotel and Consumer Account.
 
